@@ -36,41 +36,76 @@
 
 
 //CSS
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <h1>Fofolândia</h1>
-    <section class="content-center">
-        <div class="text-center">
-            <img src="assets/images/hcode.png" alt="imagem hcode">
-        </div>
-        <form id='form-login' action="/login" method="POST">
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+.content-center{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
 
-            <div>
-                <input id="email" type="email" placeholder="Digite o email" required>
-            </div>
+.content-center .text-center{
+    text-align: center;
+}
 
-            <div>
-                <input id="password" type="password" placeholder="Digite a senha" required>
-            </div>
+.content-center img{
+    width: 70%;
+}
 
-            <div>
-                <button id="btn-submit">Enviar</button>
-            </div>
-        </form>
-    </section>
-    <footer>Welcome to Fofolândia</footer>
+.content-center form{
+    margin: 20px;
+}
 
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+.content-center input,
+.content-center button{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+}
+.content-center input{
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+
+.content-center input:focus{
+    border-bottom-color: #d07335;
+}
+
+.content-center button{
+    background-color: #d07335;
+    color: #fff;
+}
+
+.content-center button:hover{
+    background-color: #b55328;
+    cursor: pointer;
+}
+
+.content-center button:active{
+    background-color: #c14e0e;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+}
 
 //js
 document.getElementById('btn-submit').addEventListener('click', e => {
